@@ -29,7 +29,7 @@ export function ReviewsCarousel({ reviews, lang, guideLabel }: { reviews: Review
   };
 
   const initials = (name: string) => name.split(/\s+/).slice(0, 2).map(s => s[0] || "").join("").toUpperCase();
-  const hues = ["#ff5a7a", "#1b6fa8", "#2fb59b", "#ffc94d", "#8b6cf6"];
+  const hues = ["#ff6b8a", "#5fb3ff", "#4fd1b5", "#ffb347", "#a78bfa"];
 
   return (
     <div className="rc" ref={wrap}>

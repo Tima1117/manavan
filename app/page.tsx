@@ -22,7 +22,7 @@ const mapEmbed = "https://www.openstreetmap.org/export/embed.html?bbox=41.6247%2
 
 const stopPhotos = ["/images/g-batumi-sign.webp", "/images/g-wine.webp", "/images/g-waterfall.webp", "/images/g-feast.webp", "/images/g-falls2.webp"];
 const stopAt = [0.1, 0.31, 0.52, 0.73, 0.92];
-const sides: ("up" | "down")[] = ["up", "down", "up", "down", "up"];
+const sides: ("up" | "down")[] = ["up", "down", "up", "down", "down"];
 const mkStops = (list: [string, string][]) => list.map(([time, title], i) => ({ at: stopAt[i], time, title, photo: stopPhotos[i], side: sides[i] }));
 
 const copy = {
@@ -239,7 +239,7 @@ const Ico = {
 };
 
 const Mark = () => (
-  <svg viewBox="0 0 32 32" aria-hidden><path d="M3 20 L10 10 L15 17 L20 8 L29 20 Z" fill="#2fb59b" /><path d="M4 24 Q8 21 12 24 T20 24 T28 24" fill="none" stroke="#1b6fa8" strokeWidth="1.6" /><rect x="9" y="17" width="14" height="7" rx="2.5" fill="#ff5a7a" /><rect x="11" y="18.5" width="3" height="2.5" rx=".6" fill="#dff3ff" /><rect x="15.5" y="18.5" width="3" height="2.5" rx=".6" fill="#dff3ff" /><circle cx="12.5" cy="25" r="1.8" fill="#17202b" /><circle cx="19.5" cy="25" r="1.8" fill="#17202b" /></svg>
+  <svg viewBox="0 0 32 32" aria-hidden><path d="M3 20 L10 10 L15 17 L20 8 L29 20 Z" fill="#2fb59b" /><path d="M4 24 Q8 21 12 24 T20 24 T28 24" fill="none" stroke="#5fb3ff" strokeWidth="1.6" /><rect x="9" y="17" width="14" height="7" rx="2.5" fill="#ff5a7a" /><rect x="11" y="18.5" width="3" height="2.5" rx=".6" fill="#dff3ff" /><rect x="15.5" y="18.5" width="3" height="2.5" rx=".6" fill="#dff3ff" /><circle cx="12.5" cy="25" r="1.8" fill="#17202b" /><circle cx="19.5" cy="25" r="1.8" fill="#17202b" /></svg>
 );
 
 function SmoothScroll() {

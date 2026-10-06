@@ -20,7 +20,7 @@ export type Tour = {
 
 export const tours: Tour[] = [
   {
-    id: "adjara", n: 1, photo: "/images/g-waterfall-wide.webp", photo2: "/images/c-makhuntseti.webp", price: 60, priceUnit: "pp", color: "#2fb59b",
+    id: "adjara", n: 1, photo: "/images/g-waterfall-wide.webp", photo2: "/images/c-makhuntseti.webp", price: 60, priceUnit: "pp", color: "#4fd1b5",
     name: t("Mountains of Adjara & three waterfalls", "Горная Аджария и три водопада", "მთიანი აჭარა და სამი ჩანჩქერი"),
     kicker: t("Our signature day", "Наш главный маршрут", "ჩვენი მთავარი მარშრუტი"),
     duration: t("10:00 – 18:30", "10:00 – 18:30", "10:00 – 18:30"),
@@ -29,7 +29,7 @@ export const tours: Tour[] = [
     includes: t("Hotel pickup, van with air conditioning, driver-guide, museum and wine tasting. Lunch paid on site. Georgian folk music on the way back.", "Трансфер от отеля, микроавтобус с кондиционером, водитель-гид, музей и дегустация вина. Обед оплачивается на месте. На обратном пути грузинская народная музыка.", "სასტუმროდან წამოყვანა, ვენი კონდიციონერით, მძღოლი-გიდი, მუზეუმი და ღვინის დეგუსტაცია. სადილი ადგილზე. უკან გზაზე ქართული ხალხური მუსიკა."),
   },
   {
-    id: "mtirala", n: 2, photo: "/images/c-mtirala.webp", photo2: "/images/g-river.webp", price: 55, priceUnit: "pp", color: "#1b6fa8",
+    id: "mtirala", n: 2, photo: "/images/c-mtirala.webp", photo2: "/images/g-river.webp", price: 55, priceUnit: "pp", color: "#5fb3ff",
     name: t("Mtirala national park", "Национальный парк Мтирала", "მტირალას ეროვნული პარკი"),
     kicker: t("Rainforest & rivers", "Колхидский лес и реки", "კოლხური ტყე და მდინარეები"),
     duration: t("10:00 – 17:00", "10:00 – 17:00", "10:00 – 17:00"),
@@ -38,7 +38,7 @@ export const tours: Tour[] = [
     includes: t("Hotel pickup, van, driver-guide, park entrance. Picnic or village lunch on request.", "Трансфер от отеля, микроавтобус, водитель-гид, вход в парк. Пикник или обед в деревне по запросу.", "სასტუმროდან წამოყვანა, ვენი, მძღოლი-გიდი, პარკის შესვლა. პიკნიკი ან სადილი სურვილით."),
   },
   {
-    id: "kutaisi", n: 3, photo: "/images/c-martvili.webp", photo2: "/images/c-prometheus.webp", price: 75, priceUnit: "pp", color: "#ff5a7a",
+    id: "kutaisi", n: 3, photo: "/images/c-martvili.webp", photo2: "/images/c-prometheus.webp", price: 75, priceUnit: "pp", color: "#ff6b8a",
     name: t("Martvili canyon, Prometheus cave & Kutaisi", "Каньон Мартвили, пещера Прометея и Кутаиси", "მარტვილის კანიონი, პრომეთეს მღვიმე და ქუთაისი"),
     kicker: t("Full day to Imereti", "Целый день в Имерети", "მთელი დღე იმერეთში"),
     duration: t("08:00 – 20:00", "08:00 – 20:00", "08:00 – 20:00"),
@@ -47,7 +47,7 @@ export const tours: Tour[] = [
     includes: t("Hotel pickup, van, driver-guide. Boat and cave tickets paid on site.", "Трансфер от отеля, микроавтобус, водитель-гид. Билеты на лодку и в пещеру на месте.", "სასტუმროდან წამოყვანა, ვენი, მძღოლი-გიდი. ნავისა და მღვიმის ბილეთები ადგილზე."),
   },
   {
-    id: "city", n: 4, photo: "/images/c-batumi-coast.webp", photo2: "/images/g-batumi-sign.webp", price: 35, priceUnit: "pp", color: "#ffc94d",
+    id: "city", n: 4, photo: "/images/c-batumi-coast.webp", photo2: "/images/g-batumi-sign.webp", price: 35, priceUnit: "pp", color: "#ffb347",
     name: t("Batumi city tour & Petra fortress", "Обзорная по Батуми и крепость Петра", "ბათუმის მიმოხილვითი ტური და პეტრას ციხე"),
     kicker: t("History & coast", "История и побережье", "ისტორია და სანაპირო"),
     duration: t("10:00 – 15:00", "10:00 – 15:00", "10:00 – 15:00"),
@@ -56,7 +56,7 @@ export const tours: Tour[] = [
     includes: t("Van, driver-guide, photo stops. Entrance tickets paid on site.", "Микроавтобус, водитель-гид, фотостопы. Входные билеты на месте.", "ვენი, მძღოლი-გიდი, ფოტო-გაჩერებები. ბილეთები ადგილზე."),
   },
   {
-    id: "garden", n: 5, photo: "/images/g-garden.webp", photo2: "/images/g-parrots.webp", price: 35, priceUnit: "pp", color: "#2fb59b",
+    id: "garden", n: 5, photo: "/images/g-garden.webp", photo2: "/images/g-parrots.webp", price: 35, priceUnit: "pp", color: "#4fd1b5",
     name: t("Botanical garden & Shekvetili dendrological park", "Ботанический сад и дендропарк Шекветили", "ბოტანიკური ბაღი და შეკვეთილის დენდროლოგიური პარკი"),
     kicker: t("The most colourful day", "Самый красочный день", "ყველაზე ფერადი დღე"),
     duration: t("10:00 – 16:00", "10:00 – 16:00", "10:00 – 16:00"),
@@ -65,7 +65,7 @@ export const tours: Tour[] = [
     includes: t("Van, driver-guide, pickup. Entrance tickets paid on site.", "Микроавтобус, водитель-гид, трансфер. Входные билеты на месте.", "ვენი, მძღოლი-გიდი, წამოყვანა. ბილეთები ადგილზე."),
   },
   {
-    id: "imereti", n: 6, photo: "/images/c-okatse.webp", photo2: "/images/c-sataplia.webp", price: 75, priceUnit: "pp", color: "#1b6fa8",
+    id: "imereti", n: 6, photo: "/images/c-okatse.webp", photo2: "/images/c-sataplia.webp", price: 75, priceUnit: "pp", color: "#5fb3ff",
     name: t("Imereti: Okatse canyon, Kinchkha waterfall & churchkhela class", "Имерети: каньон Окаце, водопад Кинчха и мастер-класс по чурчхеле", "იმერეთი: ოკაცეს კანიონი, კინჩხას ჩანჩქერი და ჩურჩხელის მასტერკლასი"),
     kicker: t("New this season", "Новинка сезона", "სეზონის სიახლე"),
     duration: t("08:30 – 20:00", "08:30 – 20:00", "08:30 – 20:00"),
@@ -74,7 +74,7 @@ export const tours: Tour[] = [
     includes: t("Van, driver-guide, pickup, wine tasting and the class. Park tickets paid on site.", "Микроавтобус, водитель-гид, трансфер, дегустация и мастер-класс. Билеты в парк на месте.", "ვენი, მძღოლი-გიდი, წამოყვანა, დეგუსტაცია და მასტერკლასი. პარკის ბილეთები ადგილზე."),
   },
   {
-    id: "multi", n: 7, photo: "/images/c-martvili.webp", photo2: "/images/c-bagrati.webp", price: 150, priceUnit: "van", color: "#ff5a7a",
+    id: "multi", n: 7, photo: "/images/c-martvili.webp", photo2: "/images/c-bagrati.webp", price: 150, priceUnit: "van", color: "#ff6b8a",
     name: t("Three days: Adjara, Imereti & Borjomi", "Три дня: Аджария, Имерети и Боржоми", "სამი დღე: აჭარა, იმერეთი და ბორჯომი"),
     kicker: t("Multi-day, your route", "Многодневный, ваш маршрут", "მრავალდღიანი, თქვენი მარშრუტი"),
     duration: t("2–5 days", "2–5 дней", "2–5 დღე"),

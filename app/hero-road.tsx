@@ -20,14 +20,14 @@ export type RoadCopy = {
   rating: string;
 };
 
-const DESK = { vb: [1440, 900] as const, d: "M -80 790 C 220 790, 330 560, 560 540 C 760 525, 820 330, 1040 320 C 1240 310, 1300 150, 1540 90" };
-const MOB = { vb: [390, 800] as const, d: "M -40 770 C 150 770, 220 640, 190 540 C 160 440, 40 420, 90 320 C 140 220, 350 230, 330 120 C 320 60, 300 20, 420 -20" };
+const DESK = { vb: [1440, 900] as const, d: "M -80 790 C 220 790, 330 580, 560 560 C 760 545, 800 340, 1000 320 C 1170 302, 1270 450, 1400 440" };
+const MOB = { vb: [390, 800] as const, d: "M -40 770 C 150 770, 220 640, 190 540 C 160 440, 40 420, 90 320 C 140 220, 330 250, 340 160 C 345 120, 370 110, 430 120" };
 const TOTAL_KM = 184;
 
 function Van({ wheelRef }: { wheelRef: React.RefObject<SVGGElement | null> }) {
   return (
     <g className="van" transform="translate(-78,-60)">
-      <ellipse cx="78" cy="62" rx="70" ry="7" fill="rgba(14,34,56,.18)" />
+      <ellipse cx="78" cy="62" rx="70" ry="7" fill="rgba(0,0,0,.35)" />
       <path d="M8 44 Q8 24 22 22 L52 20 L64 6 Q68 2 74 2 L128 2 Q138 2 141 12 L146 30 Q148 44 146 46 L8 46 Z" fill="#ff5a7a" />
       <path d="M8 44 Q8 24 22 22 L52 20 L64 6 Q68 2 74 2 L128 2 Q138 2 141 12 L146 30 Q148 44 146 46 L8 46 Z" fill="none" stroke="#c93b58" strokeWidth="1.5" />
       <path d="M66 8 L76 8 Q80 8 80 12 L80 22 L58 22 Z" fill="#dff3ff" />
@@ -107,13 +107,13 @@ export function HeroRoad({ c, wa }: { c: RoadCopy; wa: string }) {
 
         <svg className="road-svg" viewBox={`0 0 ${geo.vb[0]} ${geo.vb[1]}`} preserveAspectRatio="xMidYMax slice" aria-hidden>
           <path ref={pathRef} d={geo.d} fill="none" stroke="none" />
-          <path d={geo.d} fill="none" stroke="rgba(14,34,56,.08)" strokeWidth={mobile ? 30 : 46} strokeLinecap="round" />
-          <path ref={roadRef} d={geo.d} fill="none" stroke="#2b3a4d" strokeWidth={mobile ? 26 : 40} strokeLinecap="round" />
+          <path d={geo.d} fill="none" stroke="rgba(255,255,255,.07)" strokeWidth={mobile ? 30 : 46} strokeLinecap="round" />
+          <path ref={roadRef} d={geo.d} fill="none" stroke="#12142b" strokeWidth={mobile ? 26 : 40} strokeLinecap="round" />
           <path ref={dashRef} d={geo.d} fill="none" stroke="#ffd166" strokeWidth={mobile ? 2 : 3} strokeDasharray="22 18" strokeLinecap="round" className="road-dash" />
           {pts.map((q, i) => (
             <g key={i} className={`road-pin${passed >= i ? " on" : ""}`} transform={`translate(${q.x},${q.y})`}>
-              <circle r={mobile ? 9 : 12} fill="#fff" stroke="#ff5a7a" strokeWidth="4" />
-              <circle r={mobile ? 3 : 4} fill="#ff5a7a" />
+              <circle r={mobile ? 9 : 12} fill="#1b1d3a" stroke="#ff6b8a" strokeWidth="4" />
+              <circle r={mobile ? 3 : 4} fill="#ffb347" />
             </g>
           ))}
           <g ref={vanRef}><Van wheelRef={wheelRef} /></g>
